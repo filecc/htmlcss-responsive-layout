@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="stylesheet" href="./css/utilities.css">
     <link rel="stylesheet" href="./css/master.css">
     <title>Logo</title>
@@ -15,14 +16,48 @@
 
 <body>
     <!-- header -->
-    <header>
+    <header class="pt-2 pb-2 text-white flex align-center">
         <!-- navbar -->
-        <nav class="container">
+        <nav class="container flex justify-between align-center fixed bg-secondary w-full">
+            <div class="flex justify-between align-center">
+                <img src="./img/logo.png" alt="logo">
+            </div>
             <div>
-                
+                <ul id="nav-ul" class="flex justify-between align-center hidden">
+                    <li>ciao</li>
+                    <li class="px-1">ciao</li>
+                    <li>ciao</li>
+                </ul>
+            </div>
+            <div id="hamburger">
+                <i class="fa-solid fa-bars text-md"></i>
             </div>
         </nav>
     </header>
+
+    <!-- main -->
+    <main>
+        <div class="container flex justify-center align-center wrap text-center sm-text-left gap-1 mt-2">
+            <div class="card w-full sm-w-23 bg-secondary-very-light rounded-sm">
+                <h2 class="text-secondary">Get a demo application</h2>
+            </div>
+            <div class="w-full sm-w-13 bg-secondary-very-light rounded-sm">
+                ciao
+            </div>
+            <div class="w-full sm-w-13 bg-secondary-very-light rounded-sm">
+                ciao
+            </div>
+            <div class="w-full sm-w-13 bg-secondary-very-light rounded-sm">
+                ciao
+            </div>
+            <div class="w-full sm-w-13 bg-secondary-very-light rounded-sm">
+                ciao
+            </div>
+            <div class="w-full sm-w-13 bg-secondary-very-light rounded-sm">
+                
+            </div>
+        </div>
+    </main>
 </body>
 
 </html>

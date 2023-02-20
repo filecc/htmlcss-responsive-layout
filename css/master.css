@@ -1,72 +1,22 @@
-/* reset css */
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-}
-
-html:focus-within {
-  scroll-behavior: smooth;
-}
-
-body {
-  min-height: 100vh;
-  text-rendering: optimizeSpeed;
-  font-family: 'PT Sans', sans-serif;
-}
-
-img,
-picture,
-video,
-canvas,
-svg {
-  max-width: 100%;
-  block-size: auto;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-input,
-button,
-textarea,
-select {
-  font: inherit;
-  border: none;
-}
-
-/* utilities */
-
-:root{
-    /* Color styles */
---primary: #9792E4;
---primary-dark: #54517A;
---secondary: #0084FD;
---secondary-light: #3BA0FD;
---secondary-very-light: #B5DDFF;
---accent: #FDC15F;
---dark: #333333;
-}
-
-
 /* header */
 header{
-    background-color: var(--secondary);
-    height: 70px;
+   
 }
+nav{
+    z-index: 99;
+   height: 70px;
+}
+/* main */
 
+
+/* footer */
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 768px){
-
+    #hamburger{
+        display: none;
+    }
+    #nav-ul{
+        display: flex;
+    }
 }
