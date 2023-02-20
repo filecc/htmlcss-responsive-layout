@@ -16,6 +16,7 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   font-family: 'PT Sans', sans-serif;
+  line-height: 1.5;
 }
 
 img,
@@ -25,6 +26,7 @@ canvas,
 svg {
   max-width: 100%;
   block-size: auto;
+  display: block;
 }
 
 a {
@@ -133,6 +135,9 @@ select {
 .px-3{
     padding: 0 3rem;
 }
+.pb-0{
+    padding-bottom: 0;
+}
 .pb-1{
     padding-bottom: 1rem;
 }
@@ -217,6 +222,25 @@ select {
     flex-wrap: nowrap;
 }
 
+/* buttons */
+.btn{
+    padding: 10px 2rem;
+    display: inline-block;
+    border-radius: 20px;
+}
+.btn-small{
+    width: 10rem;
+    margin: 0 auto;
+}
+.btn-secondary{
+    background-color: var(--secondary);
+    color: white;
+}
+.btn-large{
+    width: 20rem;
+    margin: 0 auto;
+}
+
 /* colors */
 .text-white{
     color: white;
@@ -224,8 +248,11 @@ select {
 .text-dark{
     color: var(--dark);
 }
-.text-secondary{
+.text-secondary-light{
     color: var(--secondary-light);
+}
+.text-secondary{
+    color: var(--secondary);
 }
 .text-primary-light{
     color: var(--primary);
@@ -251,19 +278,25 @@ select {
 
 /* fonts */
 .text-sm{
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 .text-md{
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
 .text-lg{
     font-size: 2rem;
+}
+.text-xl{
+    font-size: 7rem;
 }
 .text-bold{
     font-weight: 700;
 }
 .text-center{
     text-align: center;
+}
+.text-left{
+    text-align: left;
 }
 
 @media screen and (min-width: 768px){
