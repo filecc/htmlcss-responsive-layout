@@ -51,7 +51,7 @@ select {
 :root{
     /* Color styles */
 --primary: #9792E4;
---primary-dark: #54517A;
+--primary-dark: #3a3855;
 --secondary: #0084FD;
 --secondary-light: #3BA0FD;
 --secondary-very-light: #B5DDFF;
@@ -63,7 +63,7 @@ select {
 .container{
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 30px;
 }
 .w-full{
     width: 100%;
@@ -73,6 +73,10 @@ select {
 }
 .h-screen{
     height: 100vh;
+}
+.aspect-square{
+    width: 4rem;
+    height: 4rem;
 }
 
 @media screen and (min-width: 768px){
@@ -103,8 +107,11 @@ select {
 .rounded-md{
     border-radius: 20px;
 }
+.rounded-lg{
+    border-radius: 40px;
+}
 .rounded-full{
-    border-radius: 50%;
+    border-radius: 100%;
 }
 
 /* margin and padding */
@@ -147,6 +154,9 @@ select {
 .pb-3{
     padding-bottom: 3rem;
 }
+.pb-4{
+    padding-bottom: 4rem;
+}
 .m-1{
     margin: 1rem;
 }
@@ -173,6 +183,9 @@ select {
 }
 .mt-3{
     margin-top: 3rem;
+}
+.mt-6{
+    margin-top: 6rem;
 }
 .mb-1{
     margin-bottom: 1rem;
@@ -281,6 +294,9 @@ select {
 .text-accent{
     color: var(--accent);
 }
+.bg-white{
+    background-color: white;
+}
 .bg-primary{
     background-color: var(--primary);
 }
@@ -315,6 +331,12 @@ select {
 }
 .text-left{
     text-align: left;
+}
+.text-emph{
+    font-style: oblique;
+}
+.text-uppercase{
+    text-transform: uppercase;
 }
 
 @media screen and (min-width: 768px){
