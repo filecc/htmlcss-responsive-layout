@@ -1,3 +1,4 @@
+/* reset css */
 *,
 *::before,
 *::after {
@@ -13,8 +14,8 @@ html:focus-within {
 
 body {
   min-height: 100vh;
-  line-height: 1.5;
   text-rendering: optimizeSpeed;
+  font-family: 'PT Sans', sans-serif;
 }
 
 img,
@@ -31,16 +32,6 @@ a {
   color: inherit;
 }
 
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  overflow-wrap: break-word;
-}
-
 ol,
 ul {
   list-style: none;
@@ -52,4 +43,30 @@ textarea,
 select {
   font: inherit;
   border: none;
+}
+
+/* utilities */
+
+:root{
+    /* Color styles */
+--primary: #9792E4;
+--primary-dark: #54517A;
+--secondary: #0084FD;
+--secondary-light: #3BA0FD;
+--secondary-very-light: #B5DDFF;
+--accent: #FDC15F;
+--dark: #333333;
+}
+
+
+/* header */
+header{
+    background-color: var(--secondary);
+    height: 70px;
+}
+
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 768px){
+
 }
