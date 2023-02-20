@@ -88,6 +88,15 @@ select {
     }
     
 }
+@media screen and (min-width: 992px){
+    .lg-w50{
+        width: 50%;
+    }
+    .lg-w40{
+        width: 40%;
+    }
+    
+}
 
 /* positionts */
 .fixed{
@@ -209,6 +218,19 @@ select {
     gap: 3rem
 }
 
+@media screen and (min-width: 992px){
+    .lg-p-1{
+        padding: 1rem;
+    }
+    .lg-p-2{
+        padding: 2rem;
+    }
+    .lg-p-3{
+        padding: 3rem;
+    }
+    
+}
+
 /* FLEX */
 .flex{
     display: flex;
@@ -243,6 +265,12 @@ select {
     }
     .lg-align-center{
         align-items: center;
+    }
+    .lg-justify-center{
+        justify-content: center;
+    }
+    .lg-align-self-end{
+        align-self: flex-end;
     }
 }
 
@@ -343,7 +371,16 @@ select {
     .sm-text-left{
         text-align: left;
     }
+    .sm-text-xl{
+        font-size: 4.5rem;
+    }
 }
+@media screen and (min-width: 992px){
+    .lg-text-md{
+        font-size: 2rem;
+    }
+}
+
 /* others */
 .hidden{
     display: none;
