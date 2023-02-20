@@ -292,6 +292,9 @@ select {
 .align-start{
     align-items: flex-start;
 }
+.align-self-b{
+    align-self: flex-end;
+}
 .wrap{
     flex-wrap: wrap;
 }
@@ -384,6 +387,9 @@ select {
 .bg-white{
     background-color: white;
 }
+.bg-dark{
+    background-color: var(--dark);
+}
 .bg-primary{
     background-color: var(--primary);
 }
@@ -411,7 +417,7 @@ select {
     font-size: 2.5rem;
 }
 .text-xl{
-    font-size: 7rem;
+    font-size: 5rem;
 }
 .text-bold{
     font-weight: 700;
