@@ -87,6 +87,9 @@ select {
     .sm-w-23{
         width: calc(((100% / 3) * 2) - 1rem);
     }
+    .sm-w-12{
+        width: calc((100% / 2) - 1rem);
+    }
     .sm-w-30{
         width: 30%;
     }
@@ -104,6 +107,9 @@ select {
     }
     .lg-w-800{
         width: 800px;
+    }
+    .lg-w-13{
+        width: calc((100% / 3) - 1rem); 
     }
 }
 
@@ -174,6 +180,9 @@ select {
 }
 .pb-4{
     padding-bottom: 4rem;
+}
+.m-0{
+    margin: 0 0;
 }
 .m-1{
     margin: 1rem;
@@ -302,7 +311,7 @@ select {
 
 /* buttons */
 .btn{
-    padding: 10px 2rem;
+    padding: 5px 2rem;
     display: inline-block;
     border-radius: 20px;
     text-align: center;
@@ -373,6 +382,9 @@ select {
 }
 .text-lg{
     font-size: 2rem;
+}
+.text-important{
+    font-size: 2.5rem;
 }
 .text-xl{
     font-size: 7rem;
