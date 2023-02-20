@@ -84,6 +84,11 @@ footer span{
         display: flex;
     }
 
+    #navButton{
+        display: block;
+        margin-left: 1rem;
+    }
+
     #firstCard {
        padding-top: 0;
        padding-bottom: 0;
