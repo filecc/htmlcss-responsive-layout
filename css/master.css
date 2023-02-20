@@ -1,22 +1,33 @@
 /* header */
-header{
-   
-}
-nav{
+header {}
+
+nav {
     z-index: 99;
-   height: 70px;
+    height: 70px;
 }
+
 /* main */
 
 
 /* footer */
 
 /* MEDIA QUERIES */
-@media screen and (min-width: 768px){
-    #hamburger{
+@media screen and (min-width: 992px) {
+    #hamburger {
         display: none;
     }
-    #nav-ul{
+
+    #nav-ul {
         display: flex;
     }
+
+    div.firstcard {
+        padding-bottom: 2rem;
+    }
+
+    div.firstcard img {
+        position: relative;
+        bottom: -2.7rem;
+    }
+
 }

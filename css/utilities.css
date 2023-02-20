@@ -221,12 +221,24 @@ select {
 .nowrap{
     flex-wrap: nowrap;
 }
+@media screen and (min-width: 992px){
+    .lg-flex{
+       display: flex;
+    }
+    .lg-align-end{
+        align-items: flex-end;
+    }
+    .lg-align-center{
+        align-items: center;
+    }
+}
 
 /* buttons */
 .btn{
     padding: 10px 2rem;
     display: inline-block;
     border-radius: 20px;
+    text-align: center;
 }
 .btn-small{
     width: 10rem;
@@ -239,6 +251,12 @@ select {
 .btn-large{
     width: 20rem;
     margin: 0 auto;
+}
+
+@media screen and (min-width: 992px){
+    .lg-btn-medium{
+        width: 15rem;
+    }
 }
 
 /* colors */
