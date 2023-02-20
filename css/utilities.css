@@ -65,6 +65,7 @@ select {
     margin: 0 auto;
     padding: 0 30px;
 }
+
 .w-full{
     width: 100%;
 }
@@ -86,6 +87,12 @@ select {
     .sm-w-23{
         width: calc(((100% / 3) * 2) - 1rem);
     }
+    .sm-w-30{
+        width: 30%;
+    }
+    .sm-w-70{
+        width: 70%;
+    }
     
 }
 @media screen and (min-width: 992px){
@@ -95,7 +102,9 @@ select {
     .lg-w40{
         width: 40%;
     }
-    
+    .lg-w-800{
+        width: 800px;
+    }
 }
 
 /* positionts */
@@ -270,6 +279,23 @@ select {
         justify-content: center;
     }
     .lg-align-self-end{
+        align-self: flex-end;
+    }
+}
+@media screen and (min-width: 768px){
+    .md-flex{
+       display: flex;
+    }
+    .md-align-end{
+        align-items: flex-end;
+    }
+    .md-align-center{
+        align-items: center;
+    }
+    .md-justify-center{
+        justify-content: center;
+    }
+    .md-align-self-end{
         align-self: flex-end;
     }
 }
