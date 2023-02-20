@@ -1,9 +1,11 @@
 /* header */
-header {}
+header {
+    z-index: 99;
+    top: 0;
+}
 
 nav {
-    z-index: 99;
-    height: 70px;
+
 }
 
 /* main */
