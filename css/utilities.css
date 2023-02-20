@@ -87,6 +87,12 @@ select {
     .sm-w-23{
         width: calc(((100% / 3) * 2) - 1rem);
     }
+    .sm-w-40{
+        width: 40%;
+    }
+    .sm-w-60{
+        width: 60%;
+    }
     .sm-w-12{
         width: calc((100% / 2) - 1rem);
     }
@@ -236,6 +242,22 @@ select {
     gap: 3rem
 }
 
+@media screen and (min-width: 768px){
+    .md-p-1{
+        padding: 1rem;
+    }
+    .md-p-2{
+        padding: 2rem;
+    }
+    .md-p-3{
+        padding: 3rem;
+    }
+    .md-pt-3{
+        padding-top: 3rem;
+    }
+    
+}
+
 @media screen and (min-width: 992px){
     .lg-p-1{
         padding: 1rem;
@@ -248,6 +270,8 @@ select {
     }
     
 }
+
+
 
 /* FLEX */
 .flex{
