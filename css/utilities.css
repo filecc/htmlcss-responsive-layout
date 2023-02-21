@@ -343,9 +343,10 @@ select {
     border-radius: 20px;
     text-align: center;
     transition: all .5s linear;
+    letter-spacing: .12rem ;
 }
 .btn-small{
-    width: 10rem;
+    width: 12rem;
     margin: 0 auto;
 }
 .btn-secondary{
