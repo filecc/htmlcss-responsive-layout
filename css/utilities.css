@@ -461,3 +461,16 @@ select {
 .hidden{
     display: none;
 }
+
+/* DARK MODE */
+
+@media (prefers-color-scheme: dark) {
+    body{
+        background-color: var(--dark);
+        color: white;
+    }
+    .dm-text-dark{
+        color: var(--dark);
+    }
+
+  }
