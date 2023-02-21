@@ -354,7 +354,8 @@ select {
     color: white;
 }
 .btn-large{
-    width: 20rem;
+    min-width: 10rem;
+    max-width: 20rem;
     margin: 0 auto;
 }
 .btn:hover{
