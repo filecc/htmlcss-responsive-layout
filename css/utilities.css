@@ -8,8 +8,12 @@
   -webkit-box-sizing: border-box;
 }
 
-html:focus-within {
+html {
   scroll-behavior: smooth;
+
+}
+section{
+    scroll-margin-top: 74px;
 }
 
 body {
