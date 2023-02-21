@@ -3,6 +3,10 @@ header {
     z-index: 99;
     top: 0;
 }
+#nav-ul a:hover{
+    text-decoration: underline;
+    color: #FDC15F;
+}
 
 /* main */
 .testimonialContainer {

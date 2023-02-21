@@ -1,0 +1,88 @@
+#hamburger {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    position: absolute;
+    top: 20%;
+    width: 40px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+    z-index: 1000;
+    opacity: 0;
+    transition: all 1s;
+
+}
+input:not(:checked)~#closeBtn{
+    display:none;
+}
+input:checked~#closeBtn{
+    display:block;
+    z-index: 999;
+}
+input:checked~#openBtn{
+    display:none;
+}
+input:not(:checked)~#menu{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    background-color: #9792E4;
+    position: fixed;
+    top: 0;
+    left: -200%;
+    z-index: 99;
+    transition: all 1s;
+}
+
+input:checked~#menu {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    background-color: #9792E4;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    animation-name: sidebarOpen;
+    animation-duration: 1s;
+}
+
+#menu ul li{
+    font-size: 3rem;
+}
+
+#menu ul li a:hover{
+    text-decoration: underline;
+    color: #FDC15F;
+}
+
+
+@keyframes sidebarOpen {
+    0% {
+        translate: -100%;
+    }
+
+    100% {
+        translate: 0;
+    }
+}
+
+@keyframes sidebarClose {
+    0% {
+        translate: 0;
+    }
+
+    100% {
+        translate: -100%;
+    }
+}

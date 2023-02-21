@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="stylesheet" href="./css/utilities.css">
+    <link rel="stylesheet" href="./css/hamburger.css">
     <link rel="stylesheet" href="./css/master.css">
     <title>Logo</title>
 </head>
@@ -29,10 +30,24 @@
                     <li><a href="#features">Features</a></li>
                     <li><a href="#aboutus">About Us</a></li>
                 </ul>
-                <a id="navButton" class="btn btn-small bg-white text-dark hidden" href="/">Get Started</a>
+                <a id="navButton" class="btn btn-small bg-white text-dark hidden" href="#getstarted">Get Started</a>
             </div>
             <div id="hamburger">
-                <i class="fa-solid fa-bars text-md"></i>
+                <input class="" type="checkbox">
+                <i id="openBtn" class="fa-solid fa-bars text-md"></i>
+                <i id="closeBtn" class="fa-solid fa-xmark text-md"></i>
+                <div id="menu" class="hidden relative w-full flex flex-col justify-center align-center">
+                    <div class="mb-3">
+                        <img aria-hidden="true" src="./img/logo.png" alt="logo">
+                    </div>
+                    <ul class="flex flex-col justify-center align-center w-full">
+                        <li> <a href="#planning">Planning</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#aboutus">About Us</a></li>
+                    </ul>
+                </div>
+                
             </div>
         </nav>
     </header>
@@ -286,7 +301,7 @@
         </section>
 
         <!-- last section -->
-        <section class="bg-primary mt-2 pt-2 pb-2">
+        <section id="getstarted" class="bg-primary mt-2 pt-2 pb-2">
             <div class="cta container text-white">
                 <h2 class="text-center text-uppercase">get started</h2>
                 <h3 class="text-lg text-center">Simple, Transparent, Pricing</h3>
